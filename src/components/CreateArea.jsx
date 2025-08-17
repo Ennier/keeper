@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import AddIcon from '@mui/icons-material/Add';
+import Fab from '@mui/material/Fab';
 
 function CreateArea(props) {
 
@@ -45,7 +46,9 @@ function CreateArea(props) {
           placeholder="Take a note..."
           rows="3"
         />
-        <button onClick={submitNote}><AddIcon /></button>
+        <Fab onClick={submitNote} color="primary" aria-label="add">
+          <AddIcon />
+        </Fab>
       </form>
     </div>
   );
